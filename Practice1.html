@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Let's go</h1>
+    <script>
+        function addTwo(a) {
+            console.log(a + 2) ;
+        }
+        addTwo(3);
+
+
+        let person = prompt("Kindly enter your name!");
+        let age = prompt("Kindly enter your age!");
+        let tenure = 18 - age;
+        function gatePass() {
+            if(age > 17) {
+                console.log(`Hi ${person}!, you are fit to vote.`);
+            }
+            else {
+                console.log(`Hi ${person}!, you have ${tenure} years left to vote.`);
+            }
+            
+        }
+        gatePass();
+
+
+
+
+    </script>
+
+</body>
+</html>

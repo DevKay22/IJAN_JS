@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+</head>
+<body>
+    <h1>Let's see if you are a wonder or not.</h1>
+
+    <script>
+        let guessedNo = prompt("Enter a number between 0 and 10");
+        let checker = Math.floor(Math.random() * 10);
+        let passed = "You are a GENIUS";
+        let fail = "Don't give up yet"
+        function guessGame() {
+            if ( guessedNo == checker) {
+                console.log(`${passed} dude!`);
+            } else {
+                console.log(`${fail} pal, the right number was ${checker}`);
+            }
+        }
+        guessGame();
+    </script>
+</body>
+</html>
